@@ -1,0 +1,200 @@
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fefefe;
+    color: #333;
+    line-height: 1.7;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Dancing Script', cursive;
+    color: #2e7d32;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #388e3c;
+    margin-bottom: 10px;
+}
+
+p, ul, ol {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+ul, ol {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 90%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #a5d6a7;
+    margin: 40px auto;
+    width: 60%;
+}
+
+a {
+    color: #2e7d32;
+    text-decoration: none;
+}
+
+button {
+    background-color: #66bb6a;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 1em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+.center {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  button {
+    width: 90%;
+    font-size: 1em;
+  }
+
+  p, ul, ol {
+    font-size: 1em;
+    padding: 0 10px;
+  }
+}
+/* DARK MODE STYLES */
+body.dark {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+body.dark h1, 
+body.dark h2, 
+body.dark h3 {
+  color: #90ee90;
+}
+
+body.dark a {
+  color: #bbf7d0;
+}
+
+body.dark hr {
+  background-color: #333;
+}
+
+body.dark button {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark button:hover {
+  background-color: #666;
+}
+/* FADE-IN ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1, h2, p, img, button {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* BUTTON HOVER GLOW */
+button:hover {
+  background-color: #388e3c;
+  box-shadow: 0 0 10px #66bb6a, 0 0 20px #66bb6a;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.product-card {
+  background-color: #f0fdf4;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  width: 280px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5em;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
